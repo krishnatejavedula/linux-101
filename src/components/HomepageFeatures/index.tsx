@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import React, { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
@@ -6,7 +6,7 @@ import styles from './styles.module.css';
 type FeatureItem = {
   title: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-  description: ReactNode;
+  description: React.ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
@@ -15,8 +15,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_remote-worker.svg').default,
     description: (
       <>
-        Learn the fundamental Linux commands and get comfortable with different distributions.
-        This guide will help you navigate your way through the open-source ecosystem with ease.
+        Learn the fundamental Linux commands and get comfortable with different
+        distributions.
       </>
     ),
   },
@@ -25,8 +25,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_version-control.svg').default,
     description: (
       <>
-        Understand the power of Git for version control. Whether you are managing your own 
-        projects or collaborating with others, this guide provides the tools you need to succeed.
+        Understand the power of Git for version control and collaboration.
       </>
     ),
   },
@@ -35,37 +34,63 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_dev-environment.svg').default,
     description: (
       <>
-        Get your development environment up and running quickly with our comprehensive 
-        setup instructions for Linux and Git. Start coding and managing your projects efficiently.
+        Quickly get your development environment up and running with Linux and Git.
       </>
     ),
   },
 ];
 
-function Feature({ title, Svg, description }: FeatureItem) {
+const Feature: React.FC<FeatureItem> = ({ title, Svg, description }) => {
+  const [flipped, setFlipped] = useState(false);
+
+  // Auto flip back after 3 seconds
+  useEffect(() => {
+    if (!flipped) return;
+    const timer = setTimeout(() => setFlipped(false), 3000);
+    return () => clearTimeout(timer);
+  }, [flipped]);
+
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+    <div className={clsx('col col--4', styles.featureCol)}>
+      <div
+        className={styles.flipCard}
+        onClick={() => setFlipped(!flipped)}
+        role="button"
+        tabIndex={0}
+        onKeyDown={(e) => e.key === 'Enter' && setFlipped(!flipped)}
+      >
+        <div
+          className={clsx(styles.flipCardInner, {
+            [styles.flipped]: flipped,
+          })}
+        >
+          <div className={styles.flipCardFront}>
+            <div className="text--center">
+              <Svg className={styles.featureSvg} role="img" />
+            </div>
+            <Heading as="h3" className={styles.featureTitle}>
+              {title}
+            </Heading>
+          </div>
+          <div className={styles.flipCardBack}>
+            <p className={styles.featureDescription}>{description}</p>
+          </div>
+        </div>
       </div>
     </div>
   );
-}
+};
 
-export default function HomepageFeatures(): ReactNode {
-  return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
+const HomepageFeatures: React.FC = () => (
+  <section className={styles.features}>
+    <div className="container">
+      <div className="row">
+        {FeatureList.map((props, idx) => (
+          <Feature key={idx} {...props} />
+        ))}
       </div>
-    </section>
-  );
-}
+    </div>
+  </section>
+);
+
+export default HomepageFeatures;

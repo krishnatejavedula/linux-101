@@ -5,9 +5,108 @@
   width: 100%;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+/* Flip card container */
+.featureCol {
+  perspective: 1500px; /* stronger 3D effect */
 }
 
+.flipCard {
+  width: 100%;
+  height: 320px; /* fit larger icon + text */
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.flipCard:hover {
+  transform: translateY(-8px); /* lift on hover */
+  box-shadow: var(--shadow-lg);
+}
+
+.flipCardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1.2s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.flipCardInner.flipped {
+  transform: rotateY(180deg);
+}
+
+/* Card faces */
+.flipCardFront,
+.flipCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: var(--global-radius);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem;
+}
+
+.flipCardFront {
+  background: var(--ifm-code-block-bg);
+  color: var(--ifm-font-color-base);
+}
+
+.flipCardBack {
+  background: var(--ifm-color-primary);
+  color: #fff;
+  transform: rotateY(180deg);
+  text-align: center;
+}
+
+/* Icon */
+.featureSvg {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.flipCard:hover .featureSvg {
+  transform: scale(1.05); /* subtle grow on hover */
+}
+
+/* Title */
+.featureTitle {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0.5rem 0 0;
+}
+
+/* Description (back side) */
+.featureDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 996px) {
+  .flipCard {
+    height: 280px;
+  }
+  .featureSvg {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flipCard {
+    height: 240px;
+  }
+  .featureSvg {
+    width: 110px;
+    height: 110px;
+  }
+}
