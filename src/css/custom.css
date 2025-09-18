@@ -280,7 +280,6 @@ code, pre {
   margin: 0.75rem auto;
   width: calc(100% - 1.5rem);
 
-  border: 1px solid var(--ifm-color-primary-lightest);
   border-radius: var(--global-radius);
   background-color: var(--ifm-background-color);
 
@@ -304,7 +303,6 @@ code, pre {
   width: calc(100% - 1.5rem);
   text-align: center;
 
-  border: 1px solid var(--ifm-color-primary-lightest);
   border-radius: var(--global-radius);
 
   box-shadow: var(--shadow-sm);
