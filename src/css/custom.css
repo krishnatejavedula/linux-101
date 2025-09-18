@@ -249,7 +249,7 @@ code, pre {
 }
 .menu__link--active {
   background: var(--ifm-color-primary);
-  color: var(--accent-hover-text);
+  color: var(--accent-hover-bg);
   font-weight: 600;
 }
 .menu__list-item-collapsible > .menu__link {
@@ -273,30 +273,47 @@ code, pre {
 }
 
 /* =======================
-   8. Footer
+   8. Navbar Floating Dock Style
+   ======================= */
+.navbar {
+  padding: 0.75rem 1.5rem;
+  margin: 0.75rem auto;
+  width: calc(100% - 1.5rem);
+
+  border: 1px solid var(--ifm-color-primary-lightest);
+  border-radius: var(--global-radius);
+  background-color: var(--ifm-background-color);
+
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 100;
+  will-change: transform, box-shadow;
+}
+.navbar:hover {
+  transform: translateY(4px) scale(1.01);
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+}
+
+/* =======================
+   9. Footer Floating Dock + Hover Lift
    ======================= */
 .footer {
-  background: var(--ifm-background-color);
-  color: var(--ifm-font-color-base);
-  padding: 3rem 1rem;
+  padding: 1.5rem 1rem;
+  margin: 0.75rem auto;
+  width: calc(100% - 1.5rem);
   text-align: center;
-  border-top: 1px solid var(--ifm-color-primary-lightest);
+
+  border: 1px solid var(--ifm-color-primary-lightest);
+  border-radius: var(--global-radius);
+
+  box-shadow: var(--shadow-sm);
+  transition: var(--global-transition);
+  position: relative;
+  z-index: 5;
 }
-.footer__title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--ifm-color-primary);
-  margin-bottom: 0.5rem;
-}
-.footer__link-item {
-  color: var(--ifm-font-color-secondary);
-  transition: color 0.3s ease;
-}
-.footer__link-item:hover {
-  color: var(--accent-hover-bg);
-}
-.footer__copyright {
-  margin-top: 2rem;
-  font-size: 0.9rem;
-  color: var(--ifm-font-color-secondary);
+.footer:hover {
+  transform: translateY(-4px) scale(1.01); /* reduced hover distance */
+  box-shadow: var(--shadow-lg);
+  cursor: pointer;
 }
