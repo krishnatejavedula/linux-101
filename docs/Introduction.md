@@ -46,7 +46,8 @@ No prior Linux experience is required. Basic familiarity with using a computer a
 
 ## **Lessons**  
 1. **[Chapter 1: Getting Started with Linux](Lessons/Chapter-1/Chapter-1.1.md)** - Overview, distributions, installation methods, and package management.
-2. **More lessons coming soon...**  
+2. **[Chapter 2: Command Line Basics](Lessons/Chapter-2/Chapter-2.1.md)** - Navigating the Linux file system, managing files, and understanding core command-line concepts.
+3. **More lessons coming soon...**  
 
 ## **Additional Resources** 
 - **[Git Cheatsheet](Resources/git-cheatsheet.md)** – A quick reference guide to essential Git commands. 
