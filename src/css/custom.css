@@ -47,7 +47,7 @@
 
   --global-transform-hover: translateY(-8px) scale(1.02);
 
-  --accent-hover-bg: #3584e4;
+  --accent-hover-bg: #62a0ea; /* #3584e4*/
   --accent-hover-text: #ffffff;
 }
 
@@ -136,7 +136,7 @@ code, pre {
   transition: var(--global-transition);
 }
 .card:hover {
-  background: var(--ifm-color-primary-lightest);
+  background-color: var(--accent-hover-bg);
   color: var(--ifm-color-primary-darkest);
   box-shadow: var(--shadow-lg);
   transform: var(--global-transform-hover);

@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Introduction
+# INTRODUCTION
 
 This workshop is designed to provide participants with a practical introduction to Linux and its use in modern development workflows. The sessions are structured to gradually build confidence in working with Linux systems—starting from installation and basic commands, moving through text editing and development environment setup using VScode and Conda, and undersatnding version control with Git.
 
