@@ -273,23 +273,7 @@ code, pre {
 }
 
 /* =======================
-   8. Navbar Floating Dock Style
-   ======================= */
-.navbar {
-  padding: 0.75rem 1.5rem;
-  margin: 0.75rem auto;
-  width: calc(100% - 1.5rem);
-
-  border-radius: var(--global-radius);
-  background-color: var(--ifm-background-color);
-
-  box-shadow: var(--shadow-sm);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  z-index: 100;
-  will-change: transform, box-shadow;
-}
-/* =======================
-   9. Footer Floating Dock + Hover Lift
+   8. Footer 
    ======================= */
 .footer {
   padding: 1.5rem 1rem;
