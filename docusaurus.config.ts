@@ -72,32 +72,16 @@ const config: Config = {
           label: "GitHub",
           position: "right",
         },
+        {
+          label: 'Women in Physics',
+          href: 'https://www.involvement.mtu.edu/organization/wip',
+          position: "left" 
+        },
       ],
     },
     footer: {
       style: "dark",
-      links: [
-        {
-          title: "Docs",
-          items: [{ label: "Tutorials", to: "/docs/Introduction" }],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Women in Physics',
-              href: 'https://www.involvement.mtu.edu/organization/wip',
-            },
-          ],
-        },
-        {
-          title: "More",
-          items: [
-            { label: "Blog", to: "/blog" },
-            { label: "GitHub", href: "https://github.com/krishnatejavedula/" },
-          ],
-        },
-      ],
+      copyright: `© ${new Date().getFullYear()} Linux-101. Made with Docusaurus`,
     },
     prism: {
       theme: prismThemes.github,

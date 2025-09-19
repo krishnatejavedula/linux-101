@@ -288,12 +288,6 @@ code, pre {
   z-index: 100;
   will-change: transform, box-shadow;
 }
-.navbar:hover {
-  transform: translateY(4px) scale(1.01);
-  box-shadow: var(--shadow-md);
-  cursor: pointer;
-}
-
 /* =======================
    9. Footer Floating Dock + Hover Lift
    ======================= */
@@ -309,9 +303,4 @@ code, pre {
   transition: var(--global-transition);
   position: relative;
   z-index: 5;
-}
-.footer:hover {
-  transform: translateY(-4px) scale(1.01); /* reduced hover distance */
-  box-shadow: var(--shadow-lg);
-  cursor: pointer;
 }
