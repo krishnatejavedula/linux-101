@@ -1,79 +1,89 @@
 /**
- * Global CSS for Docusaurus customization
- * Dracula-inspired theme with unified animations, smooth transitions & accessibility
+ * Docusaurus Global Custom CSS
+ * Author: Krishna Teja Vedula
+ * Description: Unified multi-theme customization based on GNOME Adwaita
+ *              with smooth transitions, accessibility, and consistent UI tokens.
  */
 
-/* =======================
-   1. Root Theme Variables
-   ======================= */
+/* ================================================================
+   1. THEME VARIABLES (GNOME Adwaita Light & Dark)
+   Base color palettes, typography colors, and layout tokens
+   ================================================================ */
+
+/* 1.1 GNOME Adwaita Light (default) */
 :root {
-  /* Brand Colors */
-  --ifm-color-primary: #6272a4;
-  --ifm-color-primary-dark: #5861a3;
-  --ifm-color-primary-darker: #4a5196;
-  --ifm-color-primary-darkest: #39395a;
-  --ifm-color-primary-light: #7886b9;
-  --ifm-color-primary-lighter: #8d99c6;
-  --ifm-color-primary-lightest: #e6e6fa;
+  --ifm-color-primary: #3584e4;
+  --ifm-color-primary-dark: #1c71d8;
+  --ifm-color-primary-darker: #1a5fb4;
+  --ifm-color-primary-darkest: #14437c;
+  --ifm-color-primary-light: #62a0ea;
+  --ifm-color-primary-lighter: #8ab4f9;
+  --ifm-color-primary-lightest: #d1e0fc;
 
-  /* Typography & Base */
-  --ifm-font-color-base: #282a36;
-  --ifm-font-color-secondary: #666;
-  --ifm-heading-color: #222;
+  --ifm-font-color-base: #2e3436;
+  --ifm-font-color-secondary: #5e5c64;
+  --ifm-heading-color: #2e3436;
 
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: #f0f0f0;
-  --ifm-background-color: #f8f8fa;
+  --ifm-background-color: #ffffff;
+  --ifm-code-block-bg: #f6f5f4;
+  --ifm-code-block-border: #d3d7cf;
+  --docusaurus-highlighted-code-line-bg: #e4e6e2;
 
-  --ifm-code-block-bg: #fdfdfd;
-  --ifm-code-block-border: #c4c4c4;
+  --ifm-navbar-background-color: #f6f5f4;
+  --ifm-navbar-link-color: #2e3436;
+  --ifm-footer-background-color: #f6f5f4;
+  --ifm-footer-color: #2e3436;
 
-  /* Fonts */
   --ifm-font-family-base: 'SpaceGrotesk', Arial, sans-serif;
   --ifm-font-family-headings: 'SpaceGrotesk', Arial, sans-serif;
   --ifm-font-family-monospace: 'Mononoki', Menlo, Monaco, monospace;
 
-  /* Global UI tokens */
   --global-radius: 8px;
   --global-transition: all 0.4s ease-in-out;
 
-  /* Shadows */
-  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 6px 12px rgba(0, 0, 0, 0.15);
-  --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.25);
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 6px 12px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 12px 18px rgba(0, 0, 0, 0.2);
 
-  /* Motion */
   --global-transform-hover: translateY(-8px) scale(1.02);
 
-  /* Accent */
-  --accent-hover-bg: #fdfdfd;
-  --accent-hover-text: #282a36;
+  --accent-hover-bg: #3584e4;
+  --accent-hover-text: #ffffff;
 }
 
-/* Dark theme overrides */
+/* 1.2 GNOME Adwaita Dark */
 [data-theme='dark'] {
-  --ifm-color-primary: #bd93f9;
-  --ifm-color-primary-dark: #9580ff;
-  --ifm-color-primary-darker: #6272a4;
-  --ifm-color-primary-darkest: #44475a;
-  --ifm-color-primary-light: #d6aaff;
-  --ifm-color-primary-lighter: #f1fa8c;
-  --ifm-color-primary-lightest: #ff79c6;
+  --ifm-color-primary: #3584e4;
+  --ifm-color-primary-dark: #1c71d8;
+  --ifm-color-primary-darker: #1a5fb4;
+  --ifm-color-primary-darkest: #14437c;
+  --ifm-color-primary-light: #62a0ea;
+  --ifm-color-primary-lighter: #99c1f1;
+  --ifm-color-primary-lightest: #cfe2f3;
 
-  --ifm-font-color-base: #f8f8f2;
-  --ifm-font-color-secondary: #bbb;
-  --ifm-heading-color: #fdf6e3;
+  --ifm-font-color-base: #eeeeec;
+  --ifm-font-color-secondary: #d3d7cf;
+  --ifm-heading-color: #eeeeec;
 
-  --docusaurus-highlighted-code-line-bg: #323446;
-  --ifm-background-color: #282a36;
+  --ifm-background-color: #2e3436;
+  --ifm-code-block-bg: #3b4252;
+  --ifm-code-block-border: #4c566a;
+  --docusaurus-highlighted-code-line-bg: #434c5e;
 
-  --ifm-code-block-bg: #3c3c55;
-  --ifm-code-block-border: #56568c;
+  --ifm-navbar-background-color: #2e3436;
+  --ifm-navbar-link-color: #eeeeec;
+
+  --ifm-footer-background-color: #2e3436;
+  --ifm-footer-color: #d3d7cf;
+
+  --accent-hover-bg: #62a0ea;
+  --accent-hover-text: #2e3436;
 }
 
-/* =======================
-   2. Fonts
-   ======================= */
+/* ================================================================
+   2. FONTS
+   Font-face declarations (local assets, loaded with swap)
+   ================================================================ */
 @font-face {
   font-family: 'Mononoki';
   src: url('/fonts/mononoki-Regular.ttf') format('truetype');
@@ -96,9 +106,10 @@
   font-display: swap;
 }
 
-/* =======================
-   3. Base Typography
-   ======================= */
+/* ================================================================
+   3. TYPOGRAPHY
+   Base text, headings, and code font styling
+   ================================================================ */
 body {
   font-family: var(--ifm-font-family-base);
   transition: background-color 0.4s ease, color 0.4s ease;
@@ -111,9 +122,10 @@ code, pre {
   font-family: var(--ifm-font-family-monospace);
 }
 
-/* =======================
-   4. Card Styling
-   ======================= */
+/* ================================================================
+   4. CARD COMPONENTS
+   Reusable cards with hover effects, shadows, and reduced motion
+   ================================================================ */
 .card {
   background-color: var(--ifm-color-primary);
   color: #fdfdfd;
@@ -150,15 +162,15 @@ code, pre {
 .card:hover .title {
   color: var(--accent-hover-text);
 }
-/* Hide card description text, keep only the title */
 .card .card__description,
 .card p {
   display: none !important;
 }
 
-/* =======================
-   5. Hero Section
-   ======================= */
+/* ================================================================
+   5. HERO SECTION
+   Hero banner styling with large title and call-to-action button
+   ================================================================ */
 .hero {
   background: transparent;
   padding: 6rem 1rem;
@@ -174,14 +186,12 @@ code, pre {
   margin-bottom: 0.6rem;
   line-height: 1.1;
   color: var(--ifm-heading-color);
-  transition: color 0.4s ease-in-out;
 }
 .hero p {
   font-size: 1.4rem;
   line-height: 1.6;
   color: var(--ifm-font-color-secondary);
   margin: 0 auto 2.5rem;
-  transition: color 0.4s ease-in-out;
 }
 .hero .button {
   background-color: var(--ifm-color-primary);
@@ -212,9 +222,10 @@ code, pre {
   outline-offset: 3px;
 }
 
-/* =======================
-   6. Accessibility: Reduced Motion
-   ======================= */
+/* ================================================================
+   6. ACCESSIBILITY
+   Reduced motion support for accessibility
+   ================================================================ */
 @media (prefers-reduced-motion: reduce) {
   .card,
   .hero .button,
@@ -224,9 +235,10 @@ code, pre {
   }
 }
 
-/* =======================
-   7. Sidebar Styling
-   ======================= */
+/* ================================================================
+   7. SIDEBAR
+   Sidebar menu with hover states and collapsible indicators
+   ================================================================ */
 .menu {
   padding: 1rem;
   background: var(--ifm-background-color);
@@ -249,7 +261,7 @@ code, pre {
 }
 .menu__link--active {
   background: var(--ifm-color-primary);
-  color: var(--accent-hover-bg);
+  color: var(--ifm-color-primary-darkest);
   font-weight: 600;
 }
 .menu__list-item-collapsible > .menu__link {
@@ -272,17 +284,18 @@ code, pre {
   transform: rotate(90deg);
 }
 
-/* =======================
-   8. Footer 
-   ======================= */
+/* ================================================================
+   8. FOOTER
+   Footer with subtle shadows and rounded container
+   ================================================================ */
 .footer {
   padding: 1.5rem 1rem;
   margin: 0.75rem auto;
   width: calc(100% - 1.5rem);
   text-align: center;
-
   border-radius: var(--global-radius);
-
+  background: var(--ifm-footer-background-color);
+  color: var(--ifm-footer-color);
   box-shadow: var(--shadow-sm);
   transition: var(--global-transition);
   position: relative;
