@@ -1,10 +1,9 @@
 /**
  * Linux-101 Homepage
- * Author: [Your Name]
+ * Author: Krishna Teja Vedula
  * Description: Main landing page for Linux-101.
  *              Features a hero banner with site title, tagline, 
  *              and CTA button, followed by homepage features.
- * License: MIT
  */
 
 import type { ReactNode } from "react";
@@ -36,7 +35,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="/docs/Introduction"
           >
-            🚀 Get Started
+            Get Started
           </Link>
         </div>
       </div>
