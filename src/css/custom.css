@@ -129,18 +129,20 @@ code, pre {
 .card {
   background-color: var(--ifm-color-primary);
   color: #fdfdfd;
+  border: none;
   border-radius: var(--global-radius);
   padding: 15px;
   box-shadow: var(--shadow-md);
   transition: var(--global-transition);
 }
 .card:hover {
-  background-color: var(--accent-hover-bg);
-  color: var(--accent-hover-text);
+  background: var(--ifm-color-primary-lightest);
+  color: var(--ifm-color-primary-darkest);
   box-shadow: var(--shadow-lg);
   transform: var(--global-transform-hover);
   cursor: pointer;
 }
+
 .card:active {
   transform: scale(0.98);
   box-shadow: var(--shadow-sm);
@@ -160,7 +162,7 @@ code, pre {
 }
 .card:hover h2,
 .card:hover .title {
-  color: var(--accent-hover-text);
+  color: var(--ifm-color-primary-darkest);
 }
 .card .card__description,
 .card p {
