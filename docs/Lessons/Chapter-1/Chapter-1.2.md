@@ -6,23 +6,72 @@ Linux can be used in several convenient ways—choose the one that suits your go
 
 ### **1.2.1 WSL (Windows Subsystem for Linux)**
 
-* Ideal for Windows: runs a real Linux CLI alongside Windows.
-* Fast to install and straightforward.
+* **Best for Windows users**: run a real Linux CLI alongside Windows without dual-booting or VMs.
+* **Easy to install** and integrates directly with Windows tools.
 
-> **Install WSL and Ubuntu (powershell as Admin):**
+---
+
+#### **Install WSL (Windows 10/11, PowerShell as Administrator):**
 
 ```powershell
 wsl --install
-```
+````
 
-To choose a specific distro:
+This will:
+
+* Enable the necessary Windows features.
+* Install the latest Ubuntu distribution by default.
+
+---
+
+#### **Choose a Specific Linux Distribution:**
+
+List available distributions:
 
 ```powershell
 wsl --list --online
+```
+
+Install your choice (example: Ubuntu 22.04):
+
+```powershell
 wsl --install -d Ubuntu-22.04
 ```
 
-Files are accessible under `/mnt/c/...`.
+---
+
+#### **Useful WSL Commands:**
+
+* Check installed distributions:
+
+  ```powershell
+  wsl --list --verbose
+  ```
+* Set default distribution:
+
+  ```powershell
+  wsl --set-default Ubuntu-22.04
+  ```
+* Update WSL:
+
+  ```powershell
+  wsl --update
+  ```
+
+---
+
+#### **Accessing Files:**
+
+* Windows files are under `/mnt/c/...`
+* Your Linux home directory is separate (better for Linux development).
+
+---
+
+#### **Official Docs & Resources:**
+
+* [Microsoft WSL Documentation](https://learn.microsoft.com/en-us/windows/wsl/)
+* [Ubuntu on WSL](https://ubuntu.com/wsl)
+
 
 ---
 
