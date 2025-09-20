@@ -239,8 +239,11 @@ code, pre {
    7. SIDEBAR
    Sidebar menu with hover states and collapsible indicators
    ================================================================ */
-.menu {
+:root .menu {
   padding: 1.2rem;
+}
+
+.menu {
   background: var(--ifm-background-color, #fff);
   border-right: 1px solid var(--ifm-color-primary-lightest, #ccc);
   box-sizing: border-box;
