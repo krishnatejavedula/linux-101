@@ -47,11 +47,13 @@ No prior Linux experience is required. Basic familiarity with using a computer a
 ## **Lessons**  
 1. **[Chapter 1: Getting Started with Linux](Lessons/Chapter-1/Chapter-1.1.md)** - Overview, distributions, installation methods, and package management.
 2. **[Chapter 2: Command Line Basics](Lessons/Chapter-2/Chapter-2.1.md)** - Navigating the Linux file system, managing files, and understanding core command-line concepts.
-3. **More lessons coming soon...**  
+3. **[Chapter 3: Text Editors and Development Tools](Lessons/Chapter-3/Chapter-3.1.md)** Learn how to install, use, and customize Vim and VS Code for everyday development.
+4. **More lessons coming soon...**  
 
 ## **Additional Resources** 
 - **[Git Cheatsheet](Resources/git-cheatsheet.md)** – A quick reference guide to essential Git commands. 
 - **[Basic Linux Cheatsheet](Resources/basic-linux-cheatsheet.md)** - A quick reference guide to essential Linux file management, text editing, and package management commands.
 - **[Conda Guide](Resources/conda-guide.md)** - Installing miniforge and managing conda environments.
-
-
+- **[Homebrew Guide](Resources/homebrew-guide.md)** – Installing Homebrew on macOS and managing developer tools.
+- **[Flatpak Guide](Resources/flatpak-guide.md)** – Installing Flatpak on Linux and managing GUI applications.
+- **[WSL Guide](Resources/wsl-guide.md)** – Installing and configuring Windows Subsystem for Linux (WSL).
