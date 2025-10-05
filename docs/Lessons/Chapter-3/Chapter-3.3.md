@@ -40,7 +40,7 @@ Vim doesn’t come with a plugin manager by default. A popular choice is **vim-p
 
 ```bash
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
 **Example with Plugins in `.vimrc`**
@@ -51,11 +51,14 @@ call plug#begin('~/.vim/plugged')
 " File explorer
 Plug 'preservim/nerdtree'
 
-" Fuzzy finder
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+" Dracula color scheme
+Plug 'dracula/vim', { 'as': 'dracula' }
 
-" Syntax highlighting & color schemes
-Plug 'morhetz/gruvbox'
+" Nord color scheme
+Plug 'arcticicestudio/nord-vim'
+
+" Enhanced status bar
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 ```
@@ -68,6 +71,8 @@ After editing `.vimrc`, open Vim and run:
 
 to install the plugins.
 
+For the full documentation and troubleshooting, always refer to: https://github.com/junegunn/vim-plug
+
 ---
 
 ### Recommended Plugins
@@ -75,7 +80,7 @@ to install the plugins.
 * **NERDTree** → File browsing
 * **fzf** → Fuzzy finding files and commands
 * **vim-airline** → Improved status bar
-* **tpope/vim-surround** → Easy manipulation of surrounding characters
+* **vim-surround** → Easy manipulation of surrounding characters like brackets
 * **gruvbox**, **dracula** → Popular color schemes
 
 For more plugins, visit **[Vim Awesome](https://vimawesome.com)**.
