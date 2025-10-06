@@ -293,7 +293,7 @@ code, pre {
    Footer with subtle shadows and rounded container
    ================================================================ */
 .footer {
-  padding: 1.5rem 1rem;
+  padding: 0.5rem 1rem;
   margin: 0.75rem auto;
   width: calc(100% - 1.5rem);
   text-align: center;
