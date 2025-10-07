@@ -57,3 +57,4 @@ No prior Linux experience is required. Basic familiarity with using a computer a
 - **[Homebrew Guide](Resources/homebrew-guide.md)** – Installing Homebrew on macOS and managing developer tools.
 - **[Flatpak Guide](Resources/flatpak-guide.md)** – Installing Flatpak on Linux and managing GUI applications.
 - **[WSL Guide](Resources/wsl-guide.md)** – Installing and configuring Windows Subsystem for Linux (WSL).
+- **[Stow Guide](Resources/stow-guide.md)** – Managing dotfiles using GNU Stow for a clean, version-controlled setup.
