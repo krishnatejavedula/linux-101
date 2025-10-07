@@ -30,10 +30,11 @@ If you see version information, Vim is ready to use.
 
 ---
 
-###  Installing Visual Studio Code
-
+### Installing Visual Studio Code
 
 Download official VS Code packages from the [Visual Studio Code download page](https://code.visualstudio.com/download).
+
+---
 
 #### Debian/Ubuntu (.deb package)
 
@@ -49,6 +50,8 @@ Download official VS Code packages from the [Visual Studio Code download page](h
    code
    ```
 
+---
+
 #### Fedora (.rpm package)
 
 1. Download the `.rpm` file.
@@ -63,7 +66,43 @@ Download official VS Code packages from the [Visual Studio Code download page](h
    code
    ```
 
-*Tip: Installing from the official Microsoft repository instead of a package ensures automatic updates through your package manager.*
+---
+
+#### Linux (tar.gz archive)
+
+1. Download the `.tar.gz` archive from the [VS Code download page](https://code.visualstudio.com/download).
+
+2. Extract it to your preferred location — system-wide (requires `sudo`) or user-local (no `sudo` needed).
+   For example:
+
+   ```bash
+   # System-wide install (requires root)
+   sudo tar -xvf code-<version>.tar.gz -C /usr/share/
+   sudo mv /usr/share/VSCode-linux-x64 /usr/share/code
+
+   # User-local install (no root)
+   mkdir -p ~/apps
+   tar -xvf code-<version>.tar.gz -C ~/apps/
+   ```
+
+3. (Optional) Add VS Code to your PATH for easy launching:
+
+   ```bash
+   # System-wide
+   sudo ln -s /usr/share/code/bin/code /usr/bin/code
+
+   # User-local
+   echo 'alias code="~/apps/VSCode-linux-x64/code"' >> ~/.bashrc
+   source ~/.bashrc
+   ```
+
+4. Launch VS Code:
+
+   ```bash
+   code
+   ```
+   
+*💡 Tip: Installing from the `.tar.gz` archive gives you flexibility in where to install VS Code but won’t receive automatic updates. For automatic updates, use the `.deb` or `.rpm` packages via the official Microsoft repositories.*
 
 ---
 
