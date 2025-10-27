@@ -43,13 +43,15 @@ Before the workshop, participants should install or have access to:
 
 No prior Linux experience is required. Basic familiarity with using a computer and navigating file systems (Windows or macOS) will be helpful. Some sessions will touch on programming-related workflows, but deep programming knowledge is not necessary.
 
+## **Lessons**
 
-## **Lessons**  
-1. **[Chapter 1: Getting Started with Linux](Lessons/Chapter-1/Chapter-1.1.md)** – Overview, distributions, installation methods, and package management.  
-2. **[Chapter 2: Command Line Basics](Lessons/Chapter-2/Chapter-2.1.md)** – Navigating the Linux file system, managing files, and understanding core command-line concepts.  
-3. **[Chapter 3: Text Editors and Development Tools](Lessons/Chapter-3/Chapter-3.1.md)** – Learn how to install, use, and customize Vim and VS Code for everyday development.  
-4. **[Chapter 4: Managing Python Environments with Conda](Lessons/Chapter-4/Chapter-4.1.md)** – Install Conda using Miniforge, create and manage environments, install packages, and follow best practices for clean, reproducible setups.  
-5. **More lessons coming soon...**
+1. **[Chapter 1: Getting Started with Linux](Lessons/Chapter-1/Chapter-1.1.md)** – Overview, distributions, installation methods, and package management.
+2. **[Chapter 2: Command Line Basics](Lessons/Chapter-2/Chapter-2.1.md)** – Navigating the Linux file system, managing files, and understanding core command-line concepts.
+3. **[Chapter 3: Text Editors and Development Tools](Lessons/Chapter-3/Chapter-3.1.md)** – Learn how to install, use, and customize Vim and VS Code for everyday development.
+4. **[Chapter 4: Managing Python Environments with Conda](Lessons/Chapter-4/Chapter-4.1.md)** – Install Conda using Miniforge, create and manage environments, install packages, and follow best practices for clean, reproducible setups.
+5. **[Chapter 5: Getting Started with Git](Lessons/Chapter-5/Chapter-5.1.md)** – Learn Git basics, install and configure it, initialize local repositories.
+6. **More lessons coming soon...**
+
 
 ## **Practice Exercises**  
 1. **[Practice Exercise 1: Basic Linux Commands](Practice-Exercises/Exercise-1.md)** – Practice common Linux commands for navigating directories, managing files etc.

@@ -4,8 +4,6 @@ title: 4.5 Managing Conda Environments
 
 Managing your Conda environments properly helps keep your system organized, efficient, and reproducible. Regularly updating, cleaning, and backing up environments ensures stability and consistent results across projects.
 
----
-
 ### Updating Conda and Packages
 
 Keeping Conda and its packages up to date helps prevent compatibility issues and ensures you have the latest security and performance improvements.
