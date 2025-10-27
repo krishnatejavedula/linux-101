@@ -1,5 +1,5 @@
 ---
-title: Practice Exercises – 1
+title: Exercise 2 – Review of Chapters 1–3
 ---
 
 ## Overview
@@ -448,11 +448,3 @@ Open `~/practice/` in VS Code and adjust:
 4. Keep notes on commands you find useful
 5. Try to avoid using the mouse in Vim
 6. Experiment with commands in a safe directory
-
-**Questions for Next Session:**
-Keep a list of questions or problems you encountered. We'll address them when we reconvene!
-
----
-
-Good luck and happy learning!
-````

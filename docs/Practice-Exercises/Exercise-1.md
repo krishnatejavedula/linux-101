@@ -1,5 +1,5 @@
 ---
-title: 2.7 Practice Exercises - Basic Linux Commands
+title: Exercise 1 - Basic Linux Commands
 ---
 
 ## 1. Exploring and Navigating

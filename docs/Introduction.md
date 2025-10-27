@@ -52,8 +52,9 @@ No prior Linux experience is required. Basic familiarity with using a computer a
 5. **More lessons coming soon...**
 
 ## **Practice Exercises**  
-1. **[Practice Exercise 1: Linux and Command Line Fundamentals](Practice-Exercises/Practice-Exercise-1.md)** – Apply concepts from the first three chapters to reinforce your understanding of Linux basics, command-line operations, and text editor usage.  
-2. **More exercises coming soon...**
+1. **[Practice Exercise 1: Basic Linux Commands](Practice-Exercises/Exercise-1.md)** – Practice common Linux commands for navigating directories, managing files etc.
+2. **[Practice Exercise 2: Linux and Command Line Fundamentals](Practice-Exercises/Exercise-2.md)** – Apply concepts from the first three chapters to reinforce your understanding of Linux basics, command-line operations, and text editor usage.  
+3. **More exercises coming soon...**
 
 ## **Additional Resources** 
 - **[Basic Linux Cheatsheet](Resources/basic-linux-cheatsheet.md)** - A quick reference guide to essential Linux file management, text editing, and package management commands.
