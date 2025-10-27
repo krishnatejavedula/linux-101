@@ -45,15 +45,20 @@ No prior Linux experience is required. Basic familiarity with using a computer a
 
 
 ## **Lessons**  
-1. **[Chapter 1: Getting Started with Linux](Lessons/Chapter-1/Chapter-1.1.md)** - Overview, distributions, installation methods, and package management.
-2. **[Chapter 2: Command Line Basics](Lessons/Chapter-2/Chapter-2.1.md)** - Navigating the Linux file system, managing files, and understanding core command-line concepts.
-3. **[Chapter 3: Text Editors and Development Tools](Lessons/Chapter-3/Chapter-3.1.md)** Learn how to install, use, and customize Vim and VS Code for everyday development.
-4. **More lessons coming soon...**  
+1. **[Chapter 1: Getting Started with Linux](Lessons/Chapter-1/Chapter-1.1.md)** – Overview, distributions, installation methods, and package management.  
+2. **[Chapter 2: Command Line Basics](Lessons/Chapter-2/Chapter-2.1.md)** – Navigating the Linux file system, managing files, and understanding core command-line concepts.  
+3. **[Chapter 3: Text Editors and Development Tools](Lessons/Chapter-3/Chapter-3.1.md)** – Learn how to install, use, and customize Vim and VS Code for everyday development.  
+4. **[Chapter 4: Managing Python Environments with Conda](Lessons/Chapter-4/Chapter-4.1.md)** – Install Conda using Miniforge, create and manage environments, install packages, and follow best practices for clean, reproducible setups.  
+5. **More lessons coming soon...**
+
+## **Practice Exercises**  
+1. **[Practice Exercise 1: Linux and Command Line Fundamentals](Practice-Exercises/Practice-Exercise-1.md)** – Apply concepts from the first three chapters to reinforce your understanding of Linux basics, command-line operations, and text editor usage.  
+2. **More exercises coming soon...**
 
 ## **Additional Resources** 
-- **[Git Cheatsheet](Resources/git-cheatsheet.md)** – A quick reference guide to essential Git commands. 
 - **[Basic Linux Cheatsheet](Resources/basic-linux-cheatsheet.md)** - A quick reference guide to essential Linux file management, text editing, and package management commands.
-- **[Conda Guide](Resources/conda-guide.md)** - Installing miniforge and managing conda environments.
+- **[Git Cheatsheet](Resources/git-cheatsheet.md)** – A quick reference guide to essential Git commands. 
+- **[Conda Cheatsheet](Resources/conda-cheatsheet.md)** - A quick reference guide to essential conda commands.
 - **[Homebrew Guide](Resources/homebrew-guide.md)** – Installing Homebrew on macOS and managing developer tools.
 - **[Flatpak Guide](Resources/flatpak-guide.md)** – Installing Flatpak on Linux and managing GUI applications.
 - **[WSL Guide](Resources/wsl-guide.md)** – Installing and configuring Windows Subsystem for Linux (WSL).
