@@ -2,8 +2,7 @@
 title: 5.4 Using `.gitignore` to Exclude Files (Optional)
 ---
 
-Not every file in your project needs to be tracked by Git.  
-Temporary files, logs, virtual environments, or system files can clutter your repository and should be excluded.
+Not every file in your project needs to be tracked by Git. Temporary files, logs, virtual environments, or system files can clutter your repository and should be excluded.
 
 The `.gitignore` file tells Git **which files or directories to skip** when tracking changes.
 

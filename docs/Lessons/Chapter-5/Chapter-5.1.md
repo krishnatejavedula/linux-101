@@ -2,7 +2,7 @@
 title: 5.1 Introduction to Git and Version Control
 ---
 
-Git is a distributed version control system that helps you track changes, manage project history, and collaborate efficiently. Version control allows you to manage changes, track progress, and collaborate safely without losing work. It lets you experiment freely, recover from mistakes, and maintain a complete history of your project.
+Git is a distributed version control system that helps you track changes, manage project history, and collaborate efficiently Version control allows you to manage changes, track progress, and collaborate safely without losing work. It lets you experiment freely, recover from mistakes, and maintain a complete history of your project.
 
 This chapter covers the core concepts, setup, and local operations you’ll use daily when working with Git.
 
